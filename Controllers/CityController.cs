@@ -16,5 +16,11 @@ namespace WebAPI.Controllers
         {
             return new string[] { "Atlanta", "New Yourk" };
         }
+
+        [HttpGet("{id}")] // passes an id to return a string
+        public string Get( int id )
+        {
+            return "Atlanta";
+        }
     }
 }
